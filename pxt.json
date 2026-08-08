@@ -1,0 +1,41 @@
+{
+    "name": "ai-servo",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "servo": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "stable9.0",
+        "tag": "v9.0.5",
+        "commits": "https://github.com/microsoft/pxt-microbit/commits/2a6e8761e315e61d584f0882b25a276fc766db37",
+        "target": "9.0.8",
+        "pxt": "13.0.4",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
