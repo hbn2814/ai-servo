@@ -11,11 +11,11 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
     }
 })
 bluetooth.onBluetoothConnected(function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Yes)
     music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
 })
 bluetooth.onBluetoothDisconnected(function () {
-    basic.showIcon(IconNames.Sad)
+    basic.showIcon(IconNames.No)
     music.play(music.builtinPlayableSoundEffect(soundExpression.sad), music.PlaybackMode.UntilDone)
 })
 let data = ""
